@@ -1,0 +1,40 @@
+@import "config.scss";
+
+nav{
+    position: fixed;
+    & > .left{
+        margin: 30px 0 0 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        img{
+            width: 100px;
+            height: 100px;
+        }
+        .pointer{
+            /*TODO
+            занести все у змінні
+            */
+            cursor: pointer;
+            margin-left: 25px;
+            padding: 4px 16px 4px 15px;
+            border-radius: 25px;
+            width: fit-content;
+            background-color: gray;
+            color: #FFF;
+            font-family: JetBrains Mono;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            span{
+                display: none;
+            }
+            &:hover{
+                span{
+                    display: inline;
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,8 @@
 @import "../config.scss";
+@import "../navigation.scss";
+@import "../reset.scss";
+
 body{
     background-color: $body-bg-color;
+    height: 10000px;
 }
