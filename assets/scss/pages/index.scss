@@ -4,5 +4,17 @@
 
 body{
     background-color: $body-bg-color;
-    height: 10000px;
+    .wrapper{
+        margin: 0 auto;
+        width: 1400px;
+        display: flex;
+        flex-direction: column;
+        gap: 120px;
+        section{
+            width: 100%;
+            height: 800px;
+            background-color: white;
+            border-radius: 50px;
+        }
+    }
 }

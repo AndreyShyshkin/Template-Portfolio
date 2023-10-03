@@ -1,6 +1,12 @@
 @import "config.scss";
 
 nav{
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;       
+        user-select: none;           
     position: fixed;
     & > .left{
         margin: 30px 0 0 30px;
@@ -34,6 +40,13 @@ nav{
                 span{
                     display: inline;
                 }
+            }
+            &.active{
+                background: #1B91FF;
+            }
+            &:active{
+                background-color: black;
+                color: #1B91FF;
             }
         }
     }
