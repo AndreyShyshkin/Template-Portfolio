@@ -3,19 +3,93 @@
 @import "../reset.scss";
 @import "../allPages.scss";
 
-body{
-    background-color: $body-bg-color;
-    .wrapper{
-        margin: 0 auto;
-        width: 1400px;
+body {
+  background-color: $body-bg-color;
+  .wrapper {
+    margin: 0 auto;
+    width: 1400px;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    #blog {
+      background: none;
+      height: 100%;
+      h2 {
+        color: #fff;
+        font-family: JetBrains Mono;
+        font-size: 96px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        text-align: center;
+      }
+      .blog-item {
         display: flex;
-        flex-direction: column;
-        gap: 120px;
-        section{
-            width: 100%;
-            height: 800px;
-            background-color: white;
-            border-radius: 50px;
+        justify-content: space-between;
+        h3 {
+          color: #fff;
+          font-family: JetBrains Mono;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+
+          margin-top: 60px;
         }
+        p {
+          color: #fff;
+          font-family: JetBrains Mono;
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+
+          margin-top: 26px;
+          margin-right: 45px;
+        }
+        a {
+          color: #f90;
+          font-family: JetBrains Mono;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+        .img-blog {
+          width: 577px;
+          height: 366px;
+          border-radius: 60px;
+          background: #d9d9d9;
+
+          margin-top: 60px;
+        }
+      }
+      .more-btn-blog {
+        border-radius: 60px;
+        border: none;
+        padding: 28px 146px;
+        align-items: center;
+        background: #888;
+        margin: 0 auto;
+        margin-top: 120px;
+        display: block;
+        color: #fff;
+        font-family: JetBrains Mono;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
     }
+    .blog-page {
+      margin: 60px 0;
+    }
+    section {
+      width: 100%;
+      height: 800px;
+      background-color: white;
+      border-radius: 50px;
+    }
+  }
 }
