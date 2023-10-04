@@ -8,6 +8,9 @@ nav{
         -ms-user-select: none;       
         user-select: none;           
     position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
     & > .left{
         margin: 30px 0 0 30px;
         display: flex;
@@ -26,8 +29,8 @@ nav{
             padding: 4px 16px 4px 15px;
             border-radius: 25px;
             width: fit-content;
-            background-color: gray;
-            color: #FFF;
+            background-color: $main-gray;
+            color: $main-white;
             font-family: JetBrains Mono;
             font-size: 32px;
             font-style: normal;
@@ -42,11 +45,88 @@ nav{
                 }
             }
             &.active{
-                background: #1B91FF;
+                background: $main-blue;
             }
             &:active{
-                background-color: black;
-                color: #1B91FF;
+                background-color: $main-black;
+                color: $main-blue;
+            }
+        }
+    }
+    & > .right{
+        position: relative;
+        .more-btn{
+            margin-top: 30px;
+            margin-right: 30px;
+            width: 70px;
+            height: 70px;
+            background-image: url("../img/More.svg");
+            cursor: pointer;
+            &:hover{
+                background-image: url("../img/More_hover.svg");
+            }   
+            &:active{
+                background-image: url("../img/More_presed.svg");
+            }
+        }
+        #nav-menu{
+            transition: .5s;
+            position: absolute;
+            width: 600px;
+            height: 100vh;
+            background-color: $main-gray;
+            top: 0;
+            right: -600px;
+            &.active{
+                right: 0;
+            }
+            display: flex;
+            justify-content: space-between;
+            .links{
+                display: flex;
+                flex-direction: column;
+                gap: 37px;
+                margin-left: 73px;
+                margin-top: 66px;
+                a{
+                    display: block;
+                    font-family: JetBrains Mono;
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    color: $main-white;
+                    width: fit-content;
+                    &:hover{
+                        color: $main-blue;
+                    }                     
+                    &:active{
+                        color: $main-black;
+                    } 
+                    &:visited{
+                        color: $main-white;
+                    }
+                    &:visited:hover{
+                        color: $main-blue;
+                    }                    
+                    &:visited:active{
+                        color: $main-black;
+                    }
+                }
+            }
+            .button{
+                width: 70px;
+                height: 70px;
+                margin-top: 30px;
+                margin-right: 30px;
+                background-image: url("../img/Close.svg");
+                cursor: pointer;
+                &:hover{
+                    background-image: url("../img/Close_hover.svg");
+                }   
+                &:active{
+                    background-image: url("../img/Close_presed.svg");
+                }
             }
         }
     }
