@@ -16,6 +16,11 @@ nav{
         display: flex;
         flex-direction: column;
         gap: 50px;
+        .home{
+            width: 100px;
+            height: 100px;
+            background-image: url("../img/Home.svg");
+        }
         img{
             width: 100px;
             height: 100px;
