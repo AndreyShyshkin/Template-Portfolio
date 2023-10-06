@@ -18,10 +18,6 @@ body .wrapper .contacts-section {
 
 
 .networks {
-  // This is just a container to center the netbox
-  // width: 100%;
-  // height: 100vh;
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,8 +37,6 @@ body .wrapper .contacts-section {
     padding: 30px;
     color: $main-white;
     transition: color 140ms ease;
-    // margin: 0 0.4rem;
-    // background-color: red;
     cursor: pointer;
     
     &:after {
@@ -51,33 +45,20 @@ body .wrapper .contacts-section {
       bottom: calc(100% + 50px);
       display: block;
       width: 100%;
-      // bottom: 3.5rem;
-      // bottom: 70px;
       z-index: 20;
       content: attr(data-tip);
-      
-      // font-size: 0.6rem;
-      color: $body-bg-color;
+     color: $body-bg-color;
       background-color: $main-color;
       padding: 1rem;
       opacity: 0;
       pointer-events: none;
       transform: translateY(1rem);
       transition: all 300ms ease 200ms;
-      
-      // color: #fff;
     font-family: JetBrains Mono;
     font-size:22px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    // margin-top: 26px;
-    // margin-right: 45px;
-      
-      
-      
-      
-      // The animation is delayed 200ms to avoid multiple animations when hovering multiple icons quickly
     }
     
     &:hover {
@@ -101,7 +82,6 @@ body .wrapper .contacts-section {
 
   &:before {
     position: absolute;
-    // top: -0.5rem;
     top: -20px;
     right: 0;
     content: '';
@@ -115,24 +95,13 @@ body .wrapper .contacts-section {
     content: 'Find me on my networks!';
     position: absolute;
     font-family: JetBrains Mono;
-    // top: -0.8rem;
-    // top: -20px;
     right: 0;
     top: -40px;
     height: 30px;
-    // background-color: green;
-    // font-size: 0.5rem;
     padding-left: 10px;
     background-color: $body-bg-color;
-    // This background color should match the general background to make the efect with the yellow line
-    // color: #fff;
     font-size: 20px;
-    // font-style: normal;
     font-weight: 700;
-
-    // margin-top: 60px;
-  
-  
   }
   
 }
