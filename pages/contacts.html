@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>template-portfolio</title>
-    <link rel="stylesheet" href="../assets/css/contacts.css" />
+    <link rel="stylesheet" href="../../assets/css/contacts.css" />
 </head>
 
 <body>
@@ -27,10 +27,151 @@
             </div>
         </div>
     </nav>
-    <div class="wrapper">
-    </div>
-    <script src="../assets/js/utils.js"></script>
-    <script src="../assets/js/sideMenu.js"></script>
+    <section class="section-contacts__wrapper">
+        <div class="cards">
+	
+            <button class="contact-btn" type="button">Contact Me</button>
+            <div class="contact-form">
+                <a href="#" class="close"><svg class="card-toggle__icon" width="30" height="30">
+                    <use href="../assets/img/icons.svg#icon-close"></use>
+                </svg></a>
+                <form>
+                    <div class="control"><input type="text"  id="name"/><label for="name">Your Name</label></div>
+                    <div class="control"><input type="text"  id="email"/><label for="email">Email Address</label></div>
+                    <div class="control"><input type="text"  id="url"/><label for="url">Website</label></div>
+                    <div class="control"><textarea name="" id="message"></textarea><label for="message">Message</label></div>
+                    <div class="control submit">
+                        <button type="submit" class="form__submit-btn">Submit </button>
+                    </div>
+                </form>
+            </div>
+            
+             <div class="card card--overview active" id="overview">
+                <a class="card-toggle"><svg class="card-toggle__icon" width="30" height="30">
+                    <use href="../assets/img/icons.svg#icon-arrow"></use>
+                </svg></a>
+                <div class="card-content">
+                    <h2 class="card-content__title">Let's Connect and Collaborate!</h2>
+                    <div class="content__wrapper">
+                        
+                        <div class="block--left block">
+                            
+                            
+                            <p class="block__text">Come aboard my digital journey and uncover diverse avenues to connect and explore exciting possibilities. </p>
+                            <p class="block__text"> Stay tuned for my latest projects and connect with me through various social platforms to build a meaningful professional relationship.</p>
+                            
+                        </div>
+                        <div class="block--right block">
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            
+        
+            <div class="card card--github">
+                <a class="card-toggle"><svg class="card-toggle__icon" width="30" height="30">
+                    <use href="../assets/img/icons.svg#icon-github"></use>
+                  </svg></a>
+                <div class="card-content">
+                    <div class="content__wrapper">
+                        <div class="block--left block">
+                            <h2 class="card-content__title" ><a href="https://github.com/" class="card-content__link" target="_blank">
+                                <svg class="card-content__icon" width="30" height="30">
+                                    <use href="../../assets/img/icons.svg#icon-github"></use>
+                                </svg>
+                                My Github
+                                </a>
+                                    </h2>
+                            <p class="block__text">Explore my coding playground on GitHub, where you can delve into my open-source projects, contributions, and the code that powers my digital world. </p>
+                            <p class="block__text">Discover the magic of collaboration and innovation in every repository</p>
+                        </div>
+                        <div class="block--right block"><img src="../../assets/img/project_preview.jpg" alt="project preview" /></div>
+                    </div>
+                </div>
+            </div> 
+            
+            <div class="card card--facebook">
+                <a class="card-toggle"><svg class="card-toggle__icon" width="30" height="30">
+                    <use href="../assets/img/icons.svg#icon-facebook"></use>
+                  </svg></a>
+                <div class="card-content">
+                    <div class="content__wrapper">
+                        <div class="block--left block">
+                            <h2 class="card-content__title">
+                                <a href="https://facebook.com/" class="card-content__link" target="_blank">
+                                    <svg class="card-content__icon" width="30" height="30">
+                                        <use href="../../assets/img/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                    My Facebook
+                                    </a>
+                            </h2>
+                            <p class="block__text">Connect with me on Facebook and get a glimpse into my personal and professional life.</p>
+                            <p class="block__text">Stay updated on my adventures, thoughts, and insights in the world of web development and beyond.</p>
+                            <p class="block__text">Let's build a virtual connection!</p>
+                        </div>
+                        <div class="block--right block"><img src="../../assets/img/project_preview.jpg" alt="project preview" /></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card--linkedin">
+                <a class="card-toggle"><svg class="card-toggle__icon" width="30" height="30">
+                    <use href="../assets/img/icons.svg#icon-linkedin"></use>
+                  </svg></a>
+                <div class="card-content">
+                    <div class="content__wrapper">
+                        <div class="block--left block">
+                            <h2 class="card-content__title">
+                                <a href="https://linkedin.com/" class="card-content__link" target="_blank">
+                                    <svg class="card-content__icon" width="30" height="30">
+                                        <use href="../../assets/img/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                    My Linkedin
+                                    </a>
+                            </h2>
+                            <p class="block__text">Unlock the gateway to my professional network on LinkedIn.</p>
+                            <p class="block__text">Dive into my career journey, accomplishments, and industry insights.</p>
+                            <p class="block__text">Let's connect and explore opportunities together in the world of front-end development!</p>
+                        
+                        </div>
+                        <div class="block--right block"><img src="../../assets/img/project_preview.jpg" alt="project preview" /></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card--twitter">
+                <a class="card-toggle">
+                    <svg class="card-toggle__icon" width="30" height="30">
+                        <use href="../assets/img/icons.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+                <div class="card-content">
+                    <div class="content__wrapper">
+                        <div class="block--left block">
+                            <h2 class="card-content__title">
+                                <a href="https://twitter.com/" class="card-content__link" target="_blank">
+                                <svg class="card-content__icon" width="30" height="30">
+                                    <use href="../../assets/img/icons.svg#icon-twitter"></use>
+                                </svg>
+                                My Twitter
+                                </a>
+                            </h2>
+                            <p class="block__text">Join the conversation and stay in the loop with my latest thoughts, updates, and web development insights on Twitter</p>
+                            <p class="block__text">Let's connect and explore the ever-evolving world of front-end development!</p>
+
+                        
+                        </div>
+                        <div class="block--right block"><img src="../../assets/img/project_preview.jpg" alt="project preview" /></div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+
+    </section>
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/js/utils.js"></script>
+    <script src="../../assets/js/sideMenu.js"></script>
+    <script src="../../assets/js/contacts.js"></script>
 </body>
 
 </html>

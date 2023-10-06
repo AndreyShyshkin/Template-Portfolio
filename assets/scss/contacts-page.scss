@@ -1,0 +1,396 @@
+.section-contacts__wrapper {
+  padding-top: 120px;
+}
+
+
+
+.contact-btn{
+	position: absolute;
+	top: 30px;
+	left: 50px;
+	z-index: 6;
+	color: $main-white;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 12px;
+	font-weight: 700;
+	padding: 10px 15px;
+	border-radius: 20px;
+  border:none;
+	background-color: $main-gray;
+	line-height: 1;
+	cursor: pointer;
+	text-shadow: 0 1px 0px rgba(255,255,255,.1);
+  transition : color $cubic, background-color $cubic;
+  &:hover, &:focus {
+    color: $main-black;
+    background-color: $main-color;
+  }
+	
+	
+}
+
+.contact-form{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: $main-white;
+  z-index: 5;
+  padding: 80px 50px;
+  transform: translate3d(-100%, 0, 0);
+  transition: .3s ease;
+  border-radius: 5px;
+  
+  &.active{
+    transform: translate3d(0,0,0);
+  }
+  
+  .close{
+    color: rgba(0,0,0,.7);
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    &:hover, &:focus {
+      .card-toggle__icon {
+        fill: $main-color;
+        transition : fill $cubic;
+        
+      }
+    }
+  }
+
+  .card-toggle__icon {
+    fill: $main-black;
+    transition : fill $cubic;
+    
+  }
+}
+
+
+
+.cards{
+  font-family: JetBrains Mono;
+	margin: auto;
+	background: $add-grey;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 2px 10px rgba(0,0,0,.1), 3px 5px 20px rgba(0,0,0,.2);
+  width: 70%;
+  height:600px;
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	padding: 30px;
+	
+	
+
+	.card--overview{
+		.card-toggle{
+			position: absolute;
+			top: 30px;
+			right: 30px;
+			opacity:1;
+			color: $main-white;
+      
+
+
+		}
+		.card-content{
+			background-color: $add-grey;
+			-webkit-clip-path: circle(0% at 91.5% 75px);
+			clip-path: circle(0% at 91.5% 75px);
+		}
+		&.active {
+			.card-toggle{
+        opacity: 0
+      }
+			.card-content{
+				-webkit-clip-path: circle(270% at 91.5% 75px);
+				clip-path: circle(270% at 91.5% 75px);
+			}
+		}
+		
+		.block--right{
+			background: url(../../assets/img/contacts_template.png) no-repeat bottom right;
+			background-size: contain;
+		}
+	}
+	
+	.card--github, .card--facebook, .card--linkedin, .card--twitter{
+		.card-content{
+			color: $main-white;
+			
+      .block__text:not(:nth-child(2)), .block__text:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+			.block__text {
+				color: $main-white;
+			}
+      .card-content__link {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 50px;
+        text-align: justify;
+        line-height: 1;
+        color: $main-white;
+        transition: color $cubic;
+        .card-content__icon{
+          fill: $main-white;
+          margin-right: 20px;
+          transition: fill $cubic;
+          animation: tiltShakeInfinite 0.5s infinite;
+        }
+        &:hover {
+          color: $main-black;
+          .card-content__icon{
+            fill: $main-black;
+          }
+        }
+      }
+
+		}
+	}
+	.card--github{ 
+		.card-content{ 
+			background-color: $github-color;
+			-webkit-clip-path: circle(0% at 76px 88%);
+			clip-path: circle(0% at 50px 88%);
+	
+		}
+		&.active .card-content{
+			-webkit-clip-path: circle(270% at 76px 88%);
+			clip-path: circle(270% at 50px 88%);
+		}
+	}
+	.card--facebook {
+		.card-content{ 
+			background-color: $facebook-color;
+			-webkit-clip-path: circle(0% at 150px 88%);
+			clip-path: circle(0% at 150px 88%);
+	
+		}
+		&.active .card-content{
+			-webkit-clip-path: circle(270% at 150px 88%);
+			clip-path: circle(270% at 150px 88%);
+		}
+	}
+	.card--linkedin {
+		.card-content{ 
+			background-color: $linkedin-color;
+			-webkit-clip-path: circle(0% at 220px 88%);
+			clip-path: circle(0% at 220px 88%);
+	
+		}
+		&.active .card-content{
+			-webkit-clip-path: circle(270% at 220px 88%);
+			clip-path: circle(270% at 220px 88%);
+		}
+	}
+	.card--twitter {
+		.card-content{ 
+			background-color: $twitter-color;
+			-webkit-clip-path: circle(0% at 292px 88%);
+			clip-path: circle(0% at 292px 88%);
+	
+		}
+		&.active .card-content{
+			-webkit-clip-path: circle(270% at 292px 88%);
+			clip-path: circle(270% at 292px 88%);				
+		}
+	}
+}
+
+
+.card-toggle{
+  z-index: 4;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: color $cubic, border $cubic;
+  
+  &.active{
+    color: $main-white;
+    border-color: $main-white;
+    .card-toggle__icon {
+      fill: $main-white;
+      transition: fill $cubic;
+    }
+  }
+
+
+  .card-toggle__icon {
+    fill: $main-black;
+  }
+
+
+}
+
+.card{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+
+.card-content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: -webkit-clip-path 1s ease;
+  padding: 100px 0 0;
+  overflow: hidden;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+
+  .card-content__title {
+    font-weight: 700;
+    font-size: 50px;
+    margin: 0 0 30px;
+    text-align: center;
+    line-height: 1;
+    color: $main-color;
+  }
+
+  
+  .content__wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .block{
+    width: 50%;
+    height: 100%;
+    transition: .3s ease .3s;
+    transform: translate3d(0,0,0);
+    display: flex;
+    flex-direction: column;
+    
+    
+
+
+    .block__text {
+      text-align: justify;
+      font-size: 18px;
+    }
+    .block__text:first-child {
+      margin-bottom: 20px;
+    }
+    
+    img{
+      max-width:90%;
+      width: 100%;
+    }
+    
+    &.block--left{
+      transform: translate3d(0,0, 0);
+      opacity: 0;
+      padding-left: 50px;
+    }
+    &.block--right{
+      transform: translate3d(100px,0, 0);
+      opacity: 0;
+      padding-left: 30px;
+    }
+  }
+}
+.card.active .block{
+  transform: translate3d(0,0,0);
+  opacity: 1;
+}
+
+form{
+	.control{
+		position: relative;
+		margin-bottom: 10px;
+		padding-top: 20px;
+		label{
+			position: absolute;
+			top: 30px;
+			left: 0;
+			transition: .3s ease;
+			text-transform: uppercase;
+			font-weight: 600;
+			letter-spacing: 2px;
+			font-size: 14px;
+		}
+		
+		&.submit{
+			text-align: right;
+		}
+	}
+	input, textarea{
+		width: 100%;
+		border: none;
+		border-bottom: 1px solid #e3e3e3;
+		outline: none;
+		padding: 10px 0;
+		
+	}
+  textarea {
+    resize: none;
+  }
+	.filled label,input:focus + label,textarea:focus +label{
+
+		top: 0;
+		font-size: 12px;
+
+	}
+	textarea{
+		height: 100px;
+		
+	}
+	.form__submit-btn {
+		width: auto;
+		background-color: $main-blue;
+		padding: 10px 40px;
+		color: $main-white;
+		border-radius: 40px;
+    font-size: 24px;
+    border: none;
+    transition: background-color $cubic;
+    cursor: pointer;
+    &:hover, &:focus {
+      background-color: $main-color;
+    }
+	}
+}
+
+@keyframes tiltShakeInfinite {
+
+  0% {
+      transform: rotate(0deg);
+    }
+  
+    25% {
+      transform: rotate(5deg);
+    }
+  
+    50% {
+      transform: rotate(0eg);
+    }
+  
+    75% {
+      transform: rotate(-5deg);
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
+   
+}
