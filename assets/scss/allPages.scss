@@ -21,6 +21,7 @@ body{
     color: $main-white;
     text-align: center;
     transition: 0.1s;
+    font-variant-ligatures: normal;
     &:hover{
         background-color: $main-blue;
     }

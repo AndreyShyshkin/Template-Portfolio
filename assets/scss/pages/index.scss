@@ -85,6 +85,119 @@ body {
         }
       }
     }
+    #reviews{
+      height: fit-content;
+      color: $main-black;
+      h2{
+        margin-top: 50px;
+        color: $main-black;
+      }
+      .content{
+        width: fit-content;
+        .median-score{
+          margin-left: 218px;
+          display: flex;
+          align-items: center;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          .value{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: $main-light-gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 64px;
+            margin-right: 50px;
+          }
+          .staticstics{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            & > div {
+              display: flex;
+              font-size: 20px;
+              line-height: 20px;
+              & > div{
+                width: 700px;
+                height: 20px;
+                border-radius: 10px;
+                margin-left: 10px;
+                position: relative;
+                background: $main-light-gray;
+                overflow: hidden;
+                &::after{
+                  content: "";
+                  border-radius: 10px;
+                  position: absolute;
+                  height: 100%;
+                  background: $review-score-gray;
+                }
+                &.five::after{
+                  content: "";
+                  width: 85%;
+                }
+                &.four::after{
+                  content: "";
+                  width: 15%;
+                }
+              }
+            }
+          }
+        }
+        .users-reviews{
+          margin-top: 100px;
+          margin-left: 243px;
+          display: flex;
+          flex-direction: column;
+          gap: 50px;
+          & > div.user-review{
+            display: flex;
+            img{
+              width: 100px;
+              height: 100px;
+              margin-right: 25px;
+            }
+            div{
+              p{
+                display: block;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                max-width: 758px;
+                &.head{
+                  margin-bottom: 18px;
+                  font-size: 24px;
+                }
+              }
+            }
+          }
+        }
+        a, a:visited{
+          font-size: 24px;
+          display: block;
+          width: fit-content;
+          border-radius: 21px;
+          margin-top: 25px;
+          margin-left: 233px;
+          padding: 5px 10px;
+          background: none;
+          color: $main-black;
+          &:hover{
+            background: $main-blue;
+            color: $main-white;
+          }
+          &:active{
+            background: $main-black;
+            color: $main-blue;
+          }
+          margin-bottom: 65px;
+        }
+      }
+    }
     #blog {
       background: none;
       height: 100%;
@@ -125,7 +238,6 @@ body {
           height: 366px;
           border-radius: 60px;
           background: #d9d9d9;
-
           margin-top: 60px;
         }
       }
@@ -148,7 +260,6 @@ body {
     }
     section {
       width: 100%;
-      height: 800px;
       background-color: white;
       border-radius: 50px;
     }
