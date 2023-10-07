@@ -48,6 +48,19 @@ body {
         }
       }
     }
+    #projects{
+      background: none;
+      .content{
+        margin-top: 60px;
+        overflow: hidden;
+        display: block;
+        color: $main-white;
+        img{
+          width: 800px;
+          height: 450px;
+        }
+      }
+    }
     #blog {
       background: none;
       height: 100%;

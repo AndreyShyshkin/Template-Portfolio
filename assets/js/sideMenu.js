@@ -4,4 +4,3 @@ let navMenu = Select("nav .right #nav-menu");
 
 moreBtn.onclick = () => navMenu.classList.add("active");
 closeBtn.onclick = () => navMenu.classList.remove("active");
-console.log("test");
