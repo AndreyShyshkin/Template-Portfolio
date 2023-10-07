@@ -12,26 +12,26 @@ body {
     display: flex;
     flex-direction: column;
     gap: 120px;
-    #about-me{
+    #about-me {
       margin-top: 60px;
       background: none;
-      h2{
+      h2 {
         margin-bottom: 60px;
       }
-      .content{
+      .content {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        .text{
+        .text {
           color: $main-white;
           font-size: 40px;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
-          .name{
+          .name {
             font-size: 48px;
           }
-          .more-btn-block{
+          .more-btn-block {
             display: block;
             margin-top: 30px;
             padding: 25px 24px;
@@ -39,36 +39,36 @@ body {
             border-radius: 60px;
           }
         }
-        .image{
+        .image {
           height: fit-content;
           overflow: hidden;
           border-radius: 60px;
-          img{
+          img {
             height: 600px;
           }
         }
       }
     }
-    #projects{
+    #projects {
       background: none;
-      .content{
+      .content {
         margin-top: 60px;
         overflow: hidden;
         display: block;
         color: $main-white;
-        .swiper-slide{
+        .swiper-slide {
           width: fit-content;
           overflow: hidden;
           border-radius: 30px;
-        img{
-          height: 450px;
+          img {
+            height: 450px;
+          }
+          .swiper-pagination-bullet {
+            width: 25px;
+            height: 25px;
+          }
         }
-        .swiper-pagination-bullet{
-          width: 25px;
-          height: 25px;
-        }
-        }
-        .more-btn-block{
+        .more-btn-block {
           display: block;
           padding: 28px 146px;
           width: fit-content;
@@ -80,44 +80,44 @@ body {
           font-weight: 400;
           line-height: normal;
         }
-        .space{
+        .space {
           pointer-events: none;
           height: 70px;
         }
       }
     }
-    #reviews{
+    #reviews {
       height: fit-content;
       color: $main-black;
-      h2{
+      h2 {
         margin-top: 50px;
         color: $main-black;
       }
-      .content{
+      .content {
         width: fit-content;
-        
-        .users-reviews{
+
+        .users-reviews {
           margin-top: 100px;
           margin-left: 243px;
           display: flex;
           flex-direction: column;
           gap: 50px;
-          & > div.user-review{
+          & > div.user-review {
             display: flex;
-            img{
+            img {
               width: 100px;
               height: 100px;
               margin-right: 25px;
             }
-            div{
-              p{
+            div {
+              p {
                 display: block;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
                 max-width: 758px;
-                &.head{
+                &.head {
                   margin-bottom: 18px;
                   font-size: 24px;
                 }
@@ -125,7 +125,8 @@ body {
             }
           }
         }
-        a, a:visited{
+        a,
+        a:visited {
           font-size: 24px;
           display: block;
           width: fit-content;
@@ -136,11 +137,11 @@ body {
           background: none;
           color: $main-black;
           transition: 0.1s;
-          &:hover{
+          &:hover {
             background: $main-blue;
             color: $main-white;
           }
-          &:active{
+          &:active {
             background: $main-black;
             color: $main-blue;
           }
@@ -175,6 +176,14 @@ body {
           margin-top: 26px;
           margin-right: 45px;
         }
+        .blog-date {
+          color: #636363;
+          font-family: JetBrains Mono;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
         a {
           color: #f90;
           font-family: JetBrains Mono;
@@ -182,6 +191,9 @@ body {
           font-style: normal;
           font-weight: 700;
           line-height: normal;
+        }
+        a:hover {
+          color: $main-blue;
         }
         .img-blog {
           width: 577px;
@@ -216,7 +228,7 @@ body {
   }
 }
 :root {
-  --swiper-theme-color: #1B91FF !important;
+  --swiper-theme-color: #1b91ff !important;
   --swiper-pagination-bullet-inactive-color: #888888;
   --swiper-pagination-bullet-inactive-opacity: 1;
   --swiper-pagination-bullet-horizontal-gap: 6px;

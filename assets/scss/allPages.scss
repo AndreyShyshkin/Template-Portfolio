@@ -1,32 +1,33 @@
-a{
-    text-decoration: none;
-    cursor: pointer;
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
-body{
-    background-color: $body-bg-color;
-    font-family: JetBrains Mono;
-    section{
-        & > h2 {
-            color: $main-white;
-            font-size: 96px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            text-align: center;
-        }
+body {
+  background-color: $body-bg-color;
+  font-family: JetBrains Mono;
+  section {
+    & > h2 {
+      color: $main-white;
+      font-size: 96px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-align: center;
     }
+  }
+  text-rendering: auto;
 }
-.more-btn-block{
-    background-color: $main-gray;
-    color: $main-white;
-    text-align: center;
-    transition: 0.1s;
-    font-variant-ligatures: normal;
-    &:hover{
-        background-color: $main-blue;
-    }
-    &:active{
-        background-color: $main-black;
-        color: $main-blue;
-    }
+.more-btn-block {
+  background-color: $main-gray;
+  color: $main-white;
+  text-align: center;
+  transition: 0.1s;
+  font-variant-ligatures: normal;
+  &:hover {
+    background-color: $main-blue;
+  }
+  &:active {
+    background-color: $main-black;
+    color: $main-blue;
+  }
 }
