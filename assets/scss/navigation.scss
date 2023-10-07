@@ -44,6 +44,7 @@ nav{
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            transition: 0.1s;
             span{
                 display: none;
             }
@@ -71,6 +72,7 @@ nav{
             width: 70px;
             height: 70px;
             background-image: url("../img/More.svg");
+            transition: 0.1s;
             cursor: pointer;
             &:hover{
                 background-image: url("../img/More_hover.svg");

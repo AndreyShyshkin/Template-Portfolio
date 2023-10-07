@@ -4,4 +4,28 @@ a{
 }
 body{
     background-color: $body-bg-color;
+    font-family: JetBrains Mono;
+    section{
+        & > h2 {
+            color: $main-white;
+            font-size: 96px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-align: center;
+        }
+    }
+}
+.more-btn-block{
+    background-color: $main-gray;
+    color: $main-white;
+    text-align: center;
+    transition: 0.1s;
+    &:hover{
+        background-color: $main-blue;
+    }
+    &:active{
+        background-color: $main-black;
+        color: $main-blue;
+    }
 }

@@ -11,19 +11,46 @@ body {
     display: flex;
     flex-direction: column;
     gap: 120px;
+    #about-me{
+      margin-top: 60px;
+      background: none;
+      h2{
+        margin-bottom: 60px;
+      }
+      .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .text{
+          color: $main-white;
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          .name{
+            font-size: 48px;
+          }
+          .more-btn-block{
+            display: block;
+            margin-top: 30px;
+            padding: 25px 24px;
+            width: fit-content;
+            border-radius: 60px;
+          }
+        }
+        .image{
+          height: fit-content;
+          overflow: hidden;
+          border-radius: 60px;
+          img{
+            height: 600px;
+          }
+        }
+      }
+    }
     #blog {
       background: none;
       height: 100%;
-      h2 {
-        color: #fff;
-        font-family: JetBrains Mono;
-        font-size: 96px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-
-        text-align: center;
-      }
       .blog-item {
         display: flex;
         justify-content: space-between;
@@ -70,12 +97,9 @@ body {
         border: none;
         padding: 28px 146px;
         align-items: center;
-        background: #888;
         margin: 0 auto;
         margin-top: 120px;
         display: block;
-        color: #fff;
-        font-family: JetBrains Mono;
         font-size: 64px;
         font-style: normal;
         font-weight: 400;
