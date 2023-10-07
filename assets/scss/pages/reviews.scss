@@ -2,3 +2,59 @@
 @import "../navigation.scss";
 @import "../reset.scss";
 @import "../allPages.scss";
+@import "../reviwsBlock.scss";
+
+body{
+    h2{
+        color: $main-white;
+        font-size: 96px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+        margin-top: 120px;
+        margin-bottom: 60px;
+    }
+    .wrapper{
+        margin: 0 auto;
+        margin-bottom: 120px;
+        color: $main-black;
+        width: 1400px;
+        border-radius: 60px;
+        background: $main-white;
+        padding: 120px 0;
+        hr{
+            width: 1100px;
+            height: 5px;
+            border: none;
+            border-radius: 2.5px;
+            background-color: $main-black;
+            margin: 100px auto;
+        }
+        .users-reviews{
+            display: flex;
+            flex-direction: column;
+            gap: 120px;
+            .user-review{
+                margin-left: 218px;
+                width: 1000px;
+                .info{
+                    display: flex;
+                    align-items: center;
+                    font-size: 36px;
+                    .head{
+                        margin-left: 30px;
+                    }
+                    img{
+                        width: 150px;
+                        height: 150px;
+                    }
+                }
+                .text{
+                    margin-top: 25px;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}

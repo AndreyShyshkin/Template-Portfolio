@@ -135,6 +135,7 @@ body {
           padding: 5px 10px;
           background: none;
           color: $main-black;
+          transition: 0.1s;
           &:hover{
             background: $main-blue;
             color: $main-white;

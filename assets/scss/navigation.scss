@@ -22,9 +22,16 @@ nav{
         flex-direction: column;
         gap: 50px;
         .home{
-            width: 100px;
-            height: 100px;
-            background-image: url("../img/Home.svg");
+            width: 70px;
+            height: 70px;
+            background-image: url("../img/Home.png");
+            background-size: contain;
+            &:hover{
+                background-image: url("../img/Home_hover.png");
+            }
+            &:active{
+                background-image: url("../img/Home_active.png");
+            }
         }
         img{
             width: 100px;
