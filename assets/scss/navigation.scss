@@ -13,6 +13,8 @@ nav{
     z-index: 99999;
     justify-content: space-between;
     pointer-events: none;
+    top: 0;
+    left: 0;
     & > .left{
         pointer-events: all;
         margin: 30px 0 0 30px;

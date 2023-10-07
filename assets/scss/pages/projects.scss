@@ -2,3 +2,65 @@
 @import "../navigation.scss";
 @import "../reset.scss";
 @import "../allPages.scss";
+body{
+    h2{
+        color: $main-white;
+        font-size: 96px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+        margin-top: 120px;
+        margin-bottom: 60px;
+    }
+    .wrapper{
+        margin: 0 auto;
+        margin-bottom: 120px;
+        color: $main-black;
+        width: 1400px;
+        border-radius: 60px;
+        background: $main-white;
+        padding: 65px 50px 60px; 
+        .case{
+            .info{
+                display: flex;
+                justify-content: space-between;
+                div{
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    .title{
+                        font-size: 64px;
+                        margin-bottom: 20px;
+                    }
+                    .technologies{
+                        margin-bottom: 35px;
+                    }
+                    .date{
+                        margin-bottom: 20px;
+                    }
+                    p, a{
+                        font-size: 40px;
+                    }
+                    a{
+                        text-decoration-line: underline;
+                    }
+                }
+                img{
+                    width: 800px;
+                    height: 450px;
+                }
+            }
+            .text{
+                font-size: 32px;
+            }
+        }
+        hr{
+            height: 5px;
+            border: none;
+            border-radius: 2.5px;
+            background-color: $main-black;
+            margin: 65px 0;
+        }
+    }
+}
