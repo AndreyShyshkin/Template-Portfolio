@@ -3,6 +3,7 @@ const swiper = new Swiper('.swiper-container',{
     grabCursor: true,
     centeredSlides: true,
     initialSlide: 2,
+    loop: true,
     coverflowEffect: {
       rotate: 0,
       stretch: 0,
@@ -13,14 +14,13 @@ const swiper = new Swiper('.swiper-container',{
     keyboard: {
       enabled: true
     },
-    mousewheel: {
-      thresholdDelta: 70
-    },
+    mousewheel: false,
     pagination: {
       el: ".swiper-pagination",
       clickable: true
     },
-    slidesPerView: 3,
+    slidesPerView: 'auto',
+    centered: true,
     // breakpoints: {
     //   640: {
     //     slidesPerView: 2

@@ -55,9 +55,33 @@ body {
         overflow: hidden;
         display: block;
         color: $main-white;
+        .swiper-slide{
+          width: fit-content;
+          overflow: hidden;
+          border-radius: 30px;
         img{
-          width: 800px;
           height: 450px;
+        }
+        .swiper-pagination-bullet{
+          width: 25px;
+          height: 25px;
+        }
+        }
+        .more-btn-block{
+          display: block;
+          padding: 28px 146px;
+          width: fit-content;
+          border-radius: 60px;
+          margin: 0 auto;
+          margin-top: 50px;
+          font-size: 64px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        .space{
+          pointer-events: none;
+          height: 70px;
         }
       }
     }
@@ -129,4 +153,11 @@ body {
       border-radius: 50px;
     }
   }
+}
+:root {
+  --swiper-theme-color: #1B91FF !important;
+  --swiper-pagination-bullet-inactive-color: #888888;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 6px;
+  --swiper-pagination-bullet-size: 25px !important;
 }
