@@ -3,6 +3,7 @@
 @import "../reset.scss";
 @import "../allPages.scss";
 @import "../contacts-section.scss";
+@import "../reviwsBlock.scss";
 
 body {
   .wrapper {
@@ -94,59 +95,7 @@ body {
       }
       .content{
         width: fit-content;
-        .median-score{
-          margin-left: 218px;
-          display: flex;
-          align-items: center;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-          .value{
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            background: $main-light-gray;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 64px;
-            margin-right: 50px;
-          }
-          .staticstics{
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            & > div {
-              display: flex;
-              font-size: 20px;
-              line-height: 20px;
-              & > div{
-                width: 700px;
-                height: 20px;
-                border-radius: 10px;
-                margin-left: 10px;
-                position: relative;
-                background: $main-light-gray;
-                overflow: hidden;
-                &::after{
-                  content: "";
-                  border-radius: 10px;
-                  position: absolute;
-                  height: 100%;
-                  background: $review-score-gray;
-                }
-                &.five::after{
-                  content: "";
-                  width: 85%;
-                }
-                &.four::after{
-                  content: "";
-                  width: 15%;
-                }
-              }
-            }
-          }
-        }
+        
         .users-reviews{
           margin-top: 100px;
           margin-left: 243px;
