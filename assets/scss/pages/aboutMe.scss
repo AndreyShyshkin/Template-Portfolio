@@ -2,3 +2,98 @@
 @import "../navigation.scss";
 @import "../reset.scss";
 @import "../allPages.scss";
+
+body{
+    .wrapper{
+        width: 1400px;
+        margin: 0 auto;
+        margin-bottom: 120px;
+        color: $main-white;
+        display: flex;
+        flex-direction: column;
+        gap: 120px;
+        div > h2{
+            margin-bottom: 60px;
+        }
+        h2{
+            text-align: center;
+            font-size: 96px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        .title{
+            margin-top: 120px;
+            h2{
+                font-size: 80px;
+            }
+            div{
+                border-radius: 60px;
+                overflow: hidden;
+            }
+        }
+        & > img{
+            width: 100%;
+        }
+        .description{
+            p{
+                font-size: 64px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                &.name{
+                    font-size: 80px;
+                }
+            }
+        }
+        .skills{
+            & > div{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                height: 780px;
+                gap: 60px 100px; 
+                div{
+                    display: flex;
+                    align-items: center;
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    div{
+                        margin-right: 40px;
+                        width: 150px;
+                        height: 150px;
+                        background-color: $main-light-gray;
+                    }
+                }
+            }
+        }
+        .education{
+            font-size: 80px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .experiance{
+            p{
+                font-size: 80px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            a{
+                display: block;
+                margin: 0 auto;
+                margin-top: 60px;
+                padding: 28px 70px;
+                width: fit-content;
+                border-radius: 60px;
+                font-size: 64px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+}
